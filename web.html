@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .product-desc {
+            color: #666;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.1rem;
+            margin-top: auto;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PCR PIEZOTRONIC</h1>
+            <p>129-1 STREET, STATE COLLEGE, PENNSYLVANIA, USA
+             <p>Pcr129pie@psu.edu
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>欢迎来到我们的产品展示</h2>
+            <p>我们为您精心挑选了各类优质产品，满足您的不同需求。以下是我们的产品展示，点击了解更多详情。</p>
+        </div>
+
+        <div class="products">
+            <!-- 产品1 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/1.png" alt="产品1" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Laser Interferometer</h3>
+                    <p class="product-desc">Resolution: 1nm-20nm<br>
+                        Frequency: 1Hz-100 KHz<br>
+                        Diameter: 20 mm<br>
+                        Length: 65 nm
+</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+
+            <!-- 产品2 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/2.png" alt="产品2" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Quasi-Dynamic Analysis</h3>
+                    <p class="product-desc">Voltage Drive: 60-80V<br>
+Current: 0.1 mA-1 mA<br>
+Specimen Size: 0.5mm-5mm
+</p>
+                    <p class="price">$10900</p>
+                </div>
+            </div>
+
+            <!-- 产品3 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/3.png" alt="产品3" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ferroelectric Analysis</h3>
+                    <p class="product-desc">Ferrowide M9619<br>
+Frequency: 0.1 mHz-600 MHz<br>
+Voltage: 1-200 V
+</p>
+                    <p class="price">$33000</p>
+                </div>
+            </div>
+
+            <!-- 产品4 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/4.png" alt="产品4" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Dielectric Analysis </h3>
+                    <p class="product-desc">Dielechigte PIE651M<br>
+Frequency: 2µHz-3.5 GHz<br>
+Dielectric Constant: 0-200000<br>
+Dielectric Loss: 0-0.95
+</p>
+                    <p class="price">$</p>
+                </div>
+            </div>
+
+            <!-- 产品5 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/5.png" alt="产品5" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Impedance Analysis</h3>
+                    <p class="product-desc">Pennequip R3512-9<br>
+Frequency: 0.1 mHz-100 kHz<br>
+Impedance: 0.001 ohm-100 Gohm<br>
+Piezoelectric Coefficient: 0-150000 Pc/N<br>
+Piezo Test Frequency: 110 Hz
+</p>
+                    <p class="price">$</p>
+                </div>
+            </div>
+
+            <!-- 产品6 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/product6.jpg" alt="产品6" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">产品6名称</h3>
+                    <p class="product-desc">在这里填写产品6的详细描述信息，介绍产品的主要功能和特点。</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+
+            <!-- 产品7 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/product7.jpg" alt="产品7" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">产品7名称</h3>
+                    <p class="product-desc">在这里填写产品7的详细描述信息，介绍产品的主要功能和特点。</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+
+            <!-- 产品8 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/product8.jpg" alt="产品8" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">产品8名称</h3>
+                    <p class="product-desc">在这里填写产品8的详细描述信息，介绍产品的主要功能和特点。</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+
+            <!-- 产品9 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/product9.jpg" alt="产品9" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">产品9名称</h3>
+                    <p class="product-desc">在这里填写产品9的详细描述信息，介绍产品的主要功能和特点。</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+
+            <!-- 产品10 -->
+            <div class="product">
+                <div class="product-img-container">
+                    <img src="images/product10.jpg" alt="产品10" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">产品10名称</h3>
+                    <p class="product-desc">在这里填写产品10的详细描述信息，介绍产品的主要功能和特点。</p>
+                    <p class="price">$35000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 产品展示中心. 保留所有权利。</p>
+            <p>联系我们: info@example.com | 400-123-4567</p>
+        </div>
+    </footer>
+</body>
+</html>
